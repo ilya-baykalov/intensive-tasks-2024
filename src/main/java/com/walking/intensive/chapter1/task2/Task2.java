@@ -33,7 +33,7 @@ package com.walking.intensive.chapter1.task2;
  */
 public class Task2 {
     public static void main(String[] args) {
-        System.out.println(1/12);
+        System.out.println(1 / 12);
     }
 
     static String getFlatLocation(int floorAmount, int entranceAmount, int flatNumber) {
@@ -47,8 +47,8 @@ public class Task2 {
             return "Такой квартиры не существует";
         }
 
-        int entrance = (flatNumber-1) / entranceCapacity + 1;
-        int floor = ((flatNumber - (entrance-1) * entranceCapacity) - 1) / 4 + 1;
+        int entrance = (flatNumber - 1) / entranceCapacity + 1;
+        int floor = ((flatNumber - (entrance - 1) * entranceCapacity) - 1) / 4 + 1;
 
         String afterElevator;
         if (flatNumber % 4 == 1 || flatNumber % 4 == 2) {
